@@ -1,0 +1,7 @@
+version: '3'
+services:
+  web:
+    image: cr.yandex/crplu7p8nc098r97jgeh/inno2ch
+    build: .
+    ports:
+      - "9000:8080"

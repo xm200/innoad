@@ -3,12 +3,12 @@ import jwt
 
 def make_jwt(login: str, password: str) -> str:
     return jwt.encode(payload={"login": login, "password": password},
-                      key='Haha Pls change it',
+                      key='qyn!\:_FCKi6KEN>OVT?Qf2jD+>EzT~_[%+(fr@I"4U.$l-gdpr',
                       algorithm="HS256")
 
 
 def decode_jwt(token: str) -> dict:
     try:
-        return jwt.decode(jwt=token, key='Haha Pls change it', algorithms=['HS256'])
+        return jwt.decode(jwt=token, key='qyn!\:_FCKi6KEN>OVT?Qf2jD+>EzT~_[%+(fr@I"4U.$l-gdpr', algorithms=['HS256'])
     except:
         return {}
